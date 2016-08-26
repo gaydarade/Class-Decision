@@ -38,6 +38,7 @@ public class Backpack {
 		else {
 			return false;
 		}
+		// Some other comment
 		
 		/* 	alternate of above version. When an if statement only executes one line in the body, 
 		   	the { } block can be omitted. More than one line in the body the { } is required. 
