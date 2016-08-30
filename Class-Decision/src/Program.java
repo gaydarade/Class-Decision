@@ -1,5 +1,5 @@
 
-public class Programs {
+public class Program {
 
 	public static void main(String[] args) {
 		int x = 2;
@@ -70,7 +70,7 @@ public class Programs {
 				System.out.println("x is 1");
 				break;
 			default:
-				System.out.println("no clue what x is");			
+				System.out.println("no clue what x is");		
 		}
 	}
 	/*
