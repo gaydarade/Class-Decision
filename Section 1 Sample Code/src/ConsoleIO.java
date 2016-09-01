@@ -16,6 +16,8 @@ public class ConsoleIO {
 		System.out.print("Enter in age: ");
 		int age = Integer.parseInt(scanner.nextLine());
 		
+		System.out.println(firstName + "\n" + age);
+		
 		// Close the scanner before ending the entire application to prevent IO handle attachment issues.
 		scanner.close(); 
 	}
