@@ -10,15 +10,15 @@ public class BMICalculator {
 		double w = Double.parseDouble(in.nextLine());
 		
 		double b =  w / (Math.pow(h, 2));
-		DecimalFormat df = new DecimalFormat("#.0"); 
-		String bmi = df.format(b);
+		DecimalFormat fmt = new DecimalFormat("#.0"); 
+		String bmi = fmt.format(b);
 		System.out.println("Your specific BMI is " + bmi + ".");
 		String m = "";
 		if (b <= 18.5 && b >= 0) { m = "under weight"; }
 		else if (b >= 18.5 && b <= 24.9) { m = "normal"; }
 		else if (b >= 25.0 && b <= 29.9) { m = "overweight"; }
-		else if (b < 0) { m = "n/a"; } else
-			m = "obese";
+		else if (b >= 30) { m = "obese"; } 
+		else { m = "n/a"; }
 		System.out.print("This classifies you as " + m + ".");
 	}
 }
