@@ -9,6 +9,11 @@ public class Program {
 		 * The example below uses the default constructor which will prompt for a person's
 		 * information:
 		 */
+		VideoGame vg = new VideoGame();
+		
+		System.out.println(vg.isAgeAppropriate());
+		vg.printGameSummary();
+		
 		Track c1 = new Track();
 		
 		c1.printTrackSummary();
