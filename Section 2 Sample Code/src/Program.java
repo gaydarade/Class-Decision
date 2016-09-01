@@ -9,6 +9,10 @@ public class Program {
 		 * The example below uses the default constructor which will prompt for a person's
 		 * information:
 		 */
+		Track c1 = new Track();
+		
+		c1.printTrackSummary();
+		
 		Person p1 = new Person();
 		
 		System.out.println(String.format("%s %s", p1.getFirstName(), p1.getLastName()));
