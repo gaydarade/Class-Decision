@@ -88,14 +88,12 @@ public class VideoGame {
 			(a >= 10 && rating.equalsIgnoreCase("E10")) ||
 			(rating.equalsIgnoreCase("E") || rating.equalsIgnoreCase("C")))
 		{ aa = "is"; }
-		else aa = "is not";
-		
+		else aa = "is not";	
 		
 		String m = ("This game " + aa + " age appropriate according to the ESRB.");
 		
 		return m;
 	}
-	
 
 	/*
  	Game Rating C - Early Childhood,
@@ -104,12 +102,10 @@ public class VideoGame {
  	Teen (13+),
  	Mature 17+,
  	Adult Only 18+
-
- */
+	 */
 	
 	public String gameRatingText() {
 		String grt = "";
-		
 		
 		if (rating.equalsIgnoreCase("C")) { grt = "Early Childhood"; }
 		else if (rating.equalsIgnoreCase("E")) { grt = "Everyone"; }
