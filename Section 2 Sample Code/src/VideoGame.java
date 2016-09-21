@@ -34,22 +34,22 @@ public class VideoGame {
 
 	public VideoGame() {
 		System.out.print("Enter Game Title: ");
-		setTitle(Program.in.nextLine());
+		setTitle("Cool Star");
 		
 		System.out.print("Enter Game Genre: ");
-		setGenre(Program.in.nextLine());
+		setGenre("Action");
 		
 		System.out.print("Enter Game Platform: ");
-		setPlatform(Program.in.nextLine());
+		setPlatform("PS");
 		
 		System.out.print("Enter Number of Players: ");
-		setPlayerNum(Integer.parseInt(Program.in.nextLine()));
+		setPlayerNum(1);
 		
 		//LISTS ARE THE BEST
 		setRating(ratingRecursion());
 		
 		System.out.print("Enter Game Cost: ");
-		setCost(Double.parseDouble(Program.in.nextLine()));
+		setCost(22.22);
 	}
 	
 	public String ratingRecursion() {
@@ -65,7 +65,6 @@ public class VideoGame {
 		ratings.add("AO");
 		
 		System.out.print("Enter Game Rating: ");
-		nr = Program.in.nextLine().toUpperCase();
 
 		if (!ratings.contains(nr)) {
 			System.out.print("ESRB ratings are C, E, E10, T, M, and AO.");
@@ -79,9 +78,9 @@ public class VideoGame {
 		String aa = "";
 		
 		System.out.print("Please enter your age: ");
-		int a = Integer.parseInt(Program.in.nextLine());
+		int a = 21; 
 		
-		//this is gonna look real ugly
+		//this is look real ugly
 		if ((a >= 18 && rating.equalsIgnoreCase("AO")) ||
 			(a >= 17 && rating.equalsIgnoreCase("M")) ||
 			(a >= 13 && rating.equalsIgnoreCase("T")) ||

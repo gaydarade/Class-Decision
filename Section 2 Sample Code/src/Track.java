@@ -27,19 +27,19 @@ public class Track {
 	
 	public Track() {
 		System.out.print("Enter Track Number: ");
-		trackNum = Integer.parseInt(Program.in.nextLine());
+		trackNum = 1;
 		
 		System.out.print("Enter Title: ");
-		title = Program.in.nextLine();
+		title = "";
 		
 		System.out.print("Enter Artist: ");
-		artist = Program.in.nextLine();
+		artist = "";
 		
 		System.out.print("Enter Duration (in seconds): ");
-		duration = Integer.parseInt(Program.in.nextLine());
+		duration = 180;
 		
 		System.out.print("Enter bit-rate: ");
-		setBitRate(Integer.parseInt(Program.in.nextLine()));
+		setBitRate(160);
 		
 	}
 	
