@@ -4,10 +4,8 @@ import java.util.stream.Collectors;
 import java.util.List;
 import java.util.ArrayList;
 
-
 public class DiceStatistics {
 	public static Scanner in = new Scanner(System.in);
-
 	public static void main(String[] args) {
 		
 		Random rnd = new Random();
@@ -33,7 +31,5 @@ public class DiceStatistics {
 				System.out.println(number + " was rolled " + stat + " number of times.");
 			}
 		}
-
 	}
-
 }
