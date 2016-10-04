@@ -6,11 +6,11 @@ public class Program {
 		int y = 5;
 		int z = 18;
 		
-		char letter = 'A'; // character is actually an int
+		char letter = 'A'; // character is actually an integer
 		// ASCII -- ISO-8995 || only applies to English Characters
 		// UTF-8 -- Unicode || { Supports multiple languages}
 		char m = '\u0065';
-		
+		letter = m;
 		if (letter == 65) {
 			System.out.println("This is an uppercase \u22D1");
 		}
@@ -22,9 +22,9 @@ public class Program {
 		 if (condition) {body} else if (condition) {body} else { }
 		 String.equals() for String equality check
 		 || or, && and,  ! not
-		
-		If  x >= 1 set z = x + y else set z = 0
-		 int var = (x >= 1) ? {true} : {false}
+		*/
+		if  (x >= 1) { z = x + y; } else { z = 0; }
+		boolean var = (x >= 1) ? true : false;
 		z = x >= 1 ?  x + y : 0;
 		
 		if (x >= 1){
@@ -41,32 +41,32 @@ public class Program {
  		if (dog2.equals(dog3)) {
 			System.out.println("Same dog");
 		}
-		if (x == 5) { }
+		if (var == true) { }
 		
 		if (x > y) {
 			System.out.println("X is greater than Y");
 			System.out.println("Something else");
 		}
-		else if (y < x) {
+		else if (y < z) {
 			
 		}
 		else {
 			
 		}
-		
-		 switch { case statement } char / int
+		/*
+		 switch { case statement } char / integer
 		 switch (x) { case : , default: }
 		*/
-		switch (y / x){
-			case 5:
+		switch (dog){
+			case "Bulldog":
 				System.out.println("x is 5");
 				break;
-			case 4:
-			case 3:
-			case 2:
+			case "meow":
+			case "beagle":
+			case "Beagle":
 				System.out.println("x is 2, 3, or 4");
 				break;
-			case 1:
+			case "bulldog":
 				System.out.println("x is 1");
 				break;
 			default:

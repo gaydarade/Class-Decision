@@ -5,8 +5,6 @@ import java.util.ArrayList; // Working with Collections
 public class ArraySample {
 	public static Scanner in = new Scanner(System.in);
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		// Array
 		// A collect5ion of like data types
 		// 1.) must initialize / set number of elements. ( once set can't change number of elements )
@@ -21,11 +19,13 @@ public class ArraySample {
 		int[] nums = new int[5];
 		int[] nums2 = new int[] { 5, 4, 1, 99, 33, 44, 17 };
 		
+		for (int i = 0; i < nums.length; i++) { nums[i] = nums2[i]; }
 		//String{s}
 		
 		String[] strSet = new String[3];
 		String[] strSet3 = new String[] {str1, str2, str3, "Damon"};
-		
+
+		for (int i = 0; i < strSet.length; i++) { strSet[i] = strSet3[i]; }
 		// List<T>
 		// 1.) And and Remove objects ( Resize backing Array)
 		
