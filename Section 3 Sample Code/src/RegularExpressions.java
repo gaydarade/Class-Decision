@@ -30,7 +30,30 @@ public class RegularExpressions {
 		
 		
 		// String .matches({regex}) - returns boolean
-		
+		/*
+		 * \d - digit
+		 * \D - non-digit
+		 * \w - word character a-zA-Z
+		 * \W - non-word character
+		 * \s - space character
+		 * \S - non-space character
+		 * 
+		 * ^ - starts with
+		 * $ - ends with
+		 * 
+		 * Quantifiers
+		 * . - o or more - anything else ^d.$
+		 * + - 1 or more
+		 * {x} - must match x number of times
+		 * {x, y} - must match x to y number of times
+		 * {x,} - must match  minimum of x number of times
+		 * 
+		 * Sets
+		 * [a-f0-9] - set match
+		 * [^g-k] - not contains, can't be in this set
+		 * () - grouping
+		 * | - or statement
+		 */
 		// Match a hexidecimal color code
 		// ^#([0-9a-fA-F]}{3}|[0-9a-fA-F]{6})$
 		/*

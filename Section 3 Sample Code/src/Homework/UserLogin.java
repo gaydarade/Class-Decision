@@ -24,17 +24,16 @@ public class UserLogin {
 		String ln = in.nextLine();
 		ln = ln.replaceAll(" ", "");
 		
-		String fnLetter = Character.toString(fn.toCharArray()[0]);
 		String fnLett = fn.substring(0, 1);
 		
 		String username = (fnLett + ln).toLowerCase().trim();
-		String email = username + "@example.org";
 		
 		if(username.length() > 20) {
 			username = username.substring(0, 20);
 		}	
-
-		System.out.print("Your username is: " + username);
+		
+		String email = username + "@example.org";
+		System.out.print("Your username is: " + username + "\nYour email is: " + email);
 		in.close();
 	
 	}

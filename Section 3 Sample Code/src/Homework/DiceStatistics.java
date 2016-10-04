@@ -25,12 +25,18 @@ public class DiceStatistics {
 		}
 		
 		List<Integer> diceRolled = rolls.stream().filter(x -> x > 0).collect(Collectors.toList());
-		
+
+		String str1 = "in Dice Rolled \n";
+		String str2 = "in Rolls \n";
 		for (int i = 0; i < dieCap; i++) {
 			int number = i + 1;
 			if (diceRolled.contains(number)) {
-				long stat = diceRolled.parallelStream().filter(x -> x == number).count();
-				System.out.println(number + " was rolled " + stat + " number of times.");
+				long stat = diceRolled.parallelStream().filter(x -> x == number).sorted().count();
+				str1 = str1 + number + ": " + stat + " time(s)\n";
+			}
+			if (rolls.contains(number)) {
+				long other = rolls.parallelStream().filter(x -> x == number).count();
+				str2 = str2 + number + ": " + other + "time(s)\n";
 			}
 		}
 	}

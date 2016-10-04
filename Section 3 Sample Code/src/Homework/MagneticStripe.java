@@ -32,9 +32,7 @@ public class MagneticStripe {
 			stripes.add(ms);
 		}
 		
-		for (MagneticStripe ms : stripes) {
-			ms.print();
-		}
+		for (MagneticStripe ms : stripes) { ms.print(); }
 	}
 	
 	private String accountNumber;
@@ -59,25 +57,24 @@ public class MagneticStripe {
 	
 	public void print() {
 		System.out.println("Acct #: " + getAccountNumber() + "\n" +
-						"First Name: " + getFirstName() + "\n" +
-						"Last Name: " +  getLastName() + "\n" +
-						"Exp Month: " + getExpMonth() + " Exp Year: " + getExpYear() + "\n");
+						   "First Name: " + getFirstName() + "\n" +
+						   "Last Name: " +  getLastName() + "\n" +
+						   "Expires: " + getExpMonth() + "/" + getExpYear());
 	}
 	
 	public MagneticStripe(String trk) {
-		String[] array = trk.split("\\^");
-		String acctNum = array[0].substring(2,array[0].length()).trim();
-		String[] names = array[1].split("\\/");
+		String[] arr = trk.split("\\^");
+		String acctNum = arr[0].substring(2,arr[0].length()).trim();
+		String[] names = arr[1].split("\\/");
 		String first = names[1].trim();
 		String last = names[0].trim();
-		String year = array[2].substring(0,2);
-		String month = array[2].substring(2,4);
+		String year = arr[2].substring(0,2);
+		String month = arr[2].substring(2,4);
 
 		setAccountNumber(acctNum);
 		setFirstName(first);
 		setLastName(last);
 		setExpYear(year);
 		setExpMonth(month);
-		
 	}
 }
